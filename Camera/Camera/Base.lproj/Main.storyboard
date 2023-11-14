@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MD4-BW-1az">
+                                <rect key="frame" x="0.0" y="20" width="414" height="672"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-od-e4C">
+                                <rect key="frame" x="0.0" y="648" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="2XJ-aZ-7jY">
+                                        <connections>
+                                            <action selector="launchCamera:" destination="BYZ-38-t0r" id="IyD-DA-xn5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MD4-BW-1az" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P29-ef-Tb7"/>
+                            <constraint firstItem="MD4-BW-1az" firstAttribute="trailing" secondItem="Mvd-od-e4C" secondAttribute="trailing" id="PZG-jQ-nkr"/>
+                            <constraint firstItem="MD4-BW-1az" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Pc5-PF-exy"/>
+                            <constraint firstItem="MD4-BW-1az" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wik-i1-FcW"/>
+                            <constraint firstItem="Mvd-od-e4C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dkT-da-k3F"/>
+                            <constraint firstItem="MD4-BW-1az" firstAttribute="leading" secondItem="Mvd-od-e4C" secondAttribute="leading" id="q3p-Ol-9Gx"/>
+                            <constraint firstAttribute="trailing" secondItem="MD4-BW-1az" secondAttribute="trailing" id="x0j-9c-kOQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="MD4-BW-1az" id="3sT-UQ-BQY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.2318840579712" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+</document>
